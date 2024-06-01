@@ -53,7 +53,7 @@ def transcribe(audio_file, model):
     return json.dumps(output)
 
 def summarize_text(max_length):
-    headers = {"Authorization": "Bearer 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"}
+    headers = {"Authorization": "Bearer {TOKEN}"}
     API_URL = "https://api-inference.huggingface.co/models/facebook/bart-large-cnn"
     min_length = max_length // 4
 
